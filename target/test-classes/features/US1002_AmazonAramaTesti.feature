@@ -1,5 +1,4 @@
 
-@wip
 Feature: US1002_Amazon Arama Testi
 
   Scenario: TC02 Kullanici Amazonda Nutella aramasi yapar
