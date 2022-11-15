@@ -9,5 +9,8 @@
         <module name="com.Cucumber.Fall2022" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="com.Cucumber.Fall2022" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
