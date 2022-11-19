@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue="stepdefinitions",
-        tags= "@nevzat",
+        tags= "@wip",
         dryRun = false
 )
 public class TestRunner {
