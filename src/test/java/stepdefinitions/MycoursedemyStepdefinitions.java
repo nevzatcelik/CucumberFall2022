@@ -2,8 +2,12 @@ package stepdefinitions;
 
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.interactions.Actions;
 import pages.MyCoursedemyPage;
 import utilities.ConfigReader;
+import utilities.Driver;
+import utilities.ReusableMethods;
 
 public class MycoursedemyStepdefinitions {
     MyCoursedemyPage myCoursedemyPage=new MyCoursedemyPage();
@@ -12,6 +16,7 @@ public class MycoursedemyStepdefinitions {
 
     @Then("myCourse anasayfa login linkine tiklar")
     public void my_course_anasayfa_login_linkine_tiklar() {
+
         myCoursedemyPage.loginLinki.click();
 
     }
@@ -26,7 +31,10 @@ public class MycoursedemyStepdefinitions {
     }
     @Then("myCourse login butonuna basar")
     public void my_course_login_butonuna_basar() {
-        myCoursedemyPage.loginButonu.click();
+        ReusableMethods.bekle(1);
+        Actions actions=new Actions(Driver.getDriver());
+        actions.sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).
+                sendKeys(Keys.ARROW_DOWN).click(myCoursedemyPage.loginButonu).perform();
     }
     @Then("myCourse giris yapabildigini test eder")
     public void my_course_giris_yapabildigini_test_eder() {
@@ -41,5 +49,11 @@ public class MycoursedemyStepdefinitions {
     @Then("myCourse giris yapilamadigini test eder")
     public void mycourseGirisYapilamadiginiTestEder() {
         Assert.assertTrue(myCoursedemyPage.loginLinki.isDisplayed());
+    }
+
+    @Then("Kullanici cookiesi kabul eder")
+    public void kullaniciCookiesiKabulEder() {
+        myCoursedemyPage.cookies.click();
+        ReusableMethods.bekle(2);
     }
 }

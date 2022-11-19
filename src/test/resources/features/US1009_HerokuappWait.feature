@@ -1,4 +1,4 @@
-@wip
+
 Feature: US1009 Heroquapp Wait Testleri
 
   Scenario: TC16
