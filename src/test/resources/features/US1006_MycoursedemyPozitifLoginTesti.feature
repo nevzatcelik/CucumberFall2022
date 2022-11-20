@@ -1,4 +1,4 @@
-
+@Regression
   Feature: US1006 Dogru kullanici adi ve password ile pozitif login testi
 
     Scenario: TC12 kullanici mycoursedemy sitesite giris yapabilmeli
