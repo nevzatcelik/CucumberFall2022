@@ -1,4 +1,4 @@
-
+@pt2
   Feature: US1004 Parametre Kullanma
 
     Scenario: TC08 kullanici parametre ile verilen kelimeyi amazonda aratabilmeli

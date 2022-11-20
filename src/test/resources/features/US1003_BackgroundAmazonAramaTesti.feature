@@ -1,5 +1,5 @@
 
-
+@pt2
 Feature: US1003 Background kullanarak Amazon arama testi
 
 

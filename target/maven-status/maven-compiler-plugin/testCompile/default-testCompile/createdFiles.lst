@@ -1,5 +1,6 @@
 utilities\ReusableMethods$1.class
 stepdefinitions\AmazonStepDefinitions.class
+runners\TestRunner1.class
 pages\MyCoursedemyPage.class
 stepdefinitions\AutomationStepdefinitions.class
 pages\AutomationPage.class
@@ -12,6 +13,6 @@ pages\AmazonPage.class
 stepdefinitions\Hooks.class
 utilities\ReusableMethods$2.class
 stepdefinitions\HerokuappStepdefinitons.class
-runners\TestRunner.class
 utilities\Driver.class
+runners\TestRunner2.class
 utilities\ConfigReader.class

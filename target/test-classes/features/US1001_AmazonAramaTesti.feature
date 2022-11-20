@@ -1,4 +1,4 @@
-@nevzat @Regression
+@pt1
 Feature: US1001 Amazon arama testi
 
   Scenario: TC01 Kullanıcı Amazonda arama yapabilmeli
